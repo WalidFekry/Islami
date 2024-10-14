@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<ImageView
+    android:id="@+id/radio_iv"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:src="@drawable/radio_icon"
+    android:adjustViewBounds="true"
+    android:layout_marginTop="60dp"
+    app:layout_constraintHeight_percent="0.3"/>
+
+    <TextView
+        android:id="@+id/radio_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إذاعة القرآن الكريم"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_iv"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/radio_tv">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backward"
+            android:layout_marginTop="50dp"
+            app:layout_constraintHeight_percent="0.3"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/play_sound"
+            android:layout_marginTop="50dp"
+            app:layout_constraintHeight_percent="0.3"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/next"
+            android:layout_marginTop="50dp"
+            app:layout_constraintHeight_percent="0.3"/>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

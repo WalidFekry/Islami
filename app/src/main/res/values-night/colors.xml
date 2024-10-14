@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B7935F</color>
+    <color name="colorPrimaryVariant">#E3D7C4</color>
+    <color name="colorSecondary">#E4D7C5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="appbar">#00000000</color>
+    <color name="nav_home">#B7935F</color>
+</resources>
